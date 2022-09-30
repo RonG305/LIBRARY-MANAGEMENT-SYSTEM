@@ -1,0 +1,17 @@
+{% extends 'books/base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <h3 class="my-5"><strong>UPDATE BOOK DETAILS</strong></h3>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form }}
+    
+        <a href="{% url 'index' %}" class="btn btn-danger my-2">cancel</a>
+    
+    </form>
+</div>
+
+
+{% endblock content %}
